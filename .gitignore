@@ -2,6 +2,8 @@
 *.sketch
 *.fig
 *.xd
+/design
+preview.jpg
 
 # Dependencies
 /node_modules
