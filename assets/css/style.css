@@ -95,6 +95,15 @@ button {
   }
 }
 
+.btn-back {
+  font: var(--text-3-medium);
+  color: var(--color-gray-500);
+
+  &:hover {
+    color: var(--color-blue-950);
+  }
+}
+
 .mobile-footer {
   display: none;
 }
