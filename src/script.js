@@ -30,30 +30,30 @@ const transitions = {
 
 const planPrices = {
   arcade: {
-    monthly: {amount: 900},
-    yearly: {amount: 9000}
+    monthly: 900,
+    yearly: 9000
   },
   advanced: {
-    monthly: {amount: 1200},
-    yearly: {amount: 12000}
+    monthly: 1200,
+    yearly: 12000
   },
   pro: {
-    monthly: {amount: 1500},
-    yearly: {amount: 15000}
+    monthly: 1500,
+    yearly: 15000
   },
 }
 
 const addOns = {
   onlineService: {
-    monthly: {amount: 100},
-    yearly: {amount: 1000}
+    monthly: 100,
+    yearly: 1000
   },
   largerStorage: {
-    monthly: {amount: 200},
-    yearly: {amount: 2000}
+    monthly: 200,
+    yearly: 2000
   },
   customizableProfile: {
-    monthly: {amount: 200},
-    yearly: {amount: 2000}
+    monthly: 200,
+    yearly: 2000
   }
 }
