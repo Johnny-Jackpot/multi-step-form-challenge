@@ -76,19 +76,19 @@ body {
   background: url('../images/bg-sidebar-mobile.svg') top/cover no-repeat var(--color-blue-100);
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 .card {
   width: 90vw;
   background-color: var(--color-white);
   border-radius: 10px;
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.1);
   margin-inline: auto;
-}
-
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-family: inherit;
 }
 
 .btn-next {
