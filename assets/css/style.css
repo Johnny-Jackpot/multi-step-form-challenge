@@ -168,6 +168,8 @@ button {
 
   .card {
     width: clamp(42.875rem, 90vw, 58.75rem);
+    min-height: 600px;
+    margin-block: 1rem;
   }
 
   .btn-next {
