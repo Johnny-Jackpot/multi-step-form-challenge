@@ -76,6 +76,14 @@ body {
   background: url('../images/bg-sidebar-mobile.svg') top/cover no-repeat var(--color-blue-100);
 }
 
+.card {
+  width: 90vw;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.1);
+  margin-inline: auto;
+}
+
 button {
   border: none;
   background: none;
@@ -148,6 +156,18 @@ button {
   }
   .mobile-header, .mobile-footer {
     display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: clamp(42.875rem, 90vw, 58.75rem);
   }
 
   .btn-next {
