@@ -124,15 +124,27 @@ button {
   }
 }
 
-.btn-next {
+.btn-next, .btn-confirm {
   font: var(--text-4-medium);
   background-color: var(--color-blue-950);
   color: var(--color-white);
   border-radius: 0.25rem;
   padding: 0.6rem 1rem;
+}
+
+.btn-next {
+  background-color: var(--color-blue-950);
 
   &:hover {
     background-color: var(--color-blue-700);
+  }
+}
+
+.btn-confirm {
+  background-color: var(--color-purple-600);
+
+  &:hover {
+    background-color: var(--color-purple-400);
   }
 }
 
@@ -220,7 +232,7 @@ button {
     padding: 0;
   }
 
-  .btn-next {
+  .btn-next, .btn-confirm {
     font: var(--text-3-medium);
     border-radius: 0.5rem;
     padding: 1rem 1.5rem;
