@@ -123,14 +123,31 @@
 
   <main class="container">
     <div class="card">
-      todo:
+      <div class="form-layout">
+        <div class="desktop-steps">
+          steps goes here
+        </div>
+        <form class="payment-form">
+          <div class="payment-form-fields">
+            inputs goes here
+          </div>
+          <div class="payment-form-controls desktop">
+            <button class="btn-back">Go Back</button>
+            <button class="btn-next">Next Step</button>
+            <button class="btn-confirm d-none">Confirm</button>
+          </div>
+        </form>
+      </div>
     </div>
   </main>
 
 
   <div class="mobile-footer">
-    <button class="btn-back">Go Back</button>
-    <button class="btn-next">Next Step</button>
+    <div class="payment-form-controls">
+      <button class="btn-back">Go Back</button>
+      <button class="btn-next">Next Step</button>
+      <button class="btn-confirm d-none">Confirm</button>
+    </div>
   </div>
 </body>
 </html>
