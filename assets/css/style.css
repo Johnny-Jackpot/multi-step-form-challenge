@@ -93,8 +93,7 @@ button {
 }
 
 .form-layout {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flow-root;
   width: 90vw;
   margin-inline: auto;
 }
@@ -102,6 +101,7 @@ button {
 .payment-form {
   display: flex;
   flex-direction: column;
+  margin: 2rem 1.5rem;
 }
 
 .payment-form-fields {
@@ -195,6 +195,8 @@ button {
   }
 
   .form-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     width: clamp(42.875rem, 90vw, 58.75rem);
     min-height: 600px;
     margin-block: 1rem;
