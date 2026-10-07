@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-base), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
 @font-face {
   font-family: "Ubuntu";
   src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
@@ -47,14 +55,6 @@
   --text-4-regular: 400 0.875rem/1.2 var(--font-family-base);
   --text-5: 400 0.75rem/1.2 var(--font-family-base);
   font-size: 16px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--font-family-base), sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 body {
