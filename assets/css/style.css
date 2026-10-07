@@ -199,8 +199,13 @@ button {
     margin: 1rem;
   }
 
+  .payment-form {
+    margin-inline: clamp(3.625rem, 7vw, 6.25rem);
+  }
+
   .payment-form-controls.desktop {
     display: flex;
+    padding: 0;
   }
 
   .btn-next {
