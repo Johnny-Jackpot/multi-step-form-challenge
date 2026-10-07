@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Frontend Mentor - Multi-step form solution",
   "scripts": {
-    "sass": "sass --watch src/scss/style.scss ./assets/css/style.css",
-    "sass:build": "sass src/scss/style.scss ./assets/css/style.css --style=compressed --no-source-map"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "sass": "^1.104.1"
+    "sass": "^1.105.1",
+    "vite": "^6.4.4"
   }
 }
