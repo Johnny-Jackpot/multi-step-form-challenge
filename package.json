@@ -2,6 +2,7 @@
   "name": "multi-step-form-main",
   "version": "1.0.0",
   "description": "Frontend Mentor - Multi-step form solution",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
