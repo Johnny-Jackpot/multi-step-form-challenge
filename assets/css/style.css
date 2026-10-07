@@ -99,6 +99,15 @@ button {
   margin-inline: auto;
 }
 
+.payment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form-fields {
+  flex-grow: 1;
+}
+
 .desktop-steps {
   display: none;
 }
@@ -196,11 +205,12 @@ button {
     flex-direction: column;
     background: url('../images/bg-sidebar-desktop.svg') center/cover no-repeat;
     border-radius: 10px;
-    margin: 1rem;
+    margin: 1rem 0 1rem 1rem;
   }
 
   .payment-form {
     margin-inline: clamp(3.625rem, 7vw, 6.25rem);
+    margin-block: clamp(2rem, 3vw, 3rem);
   }
 
   .payment-form-controls.desktop {
