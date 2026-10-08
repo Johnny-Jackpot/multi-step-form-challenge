@@ -1,17 +1,11 @@
 @use 'reset';
 @use 'fonts';
 @use 'colors';
+@use 'buttons';
 
 body {
   font-weight: 400;
   background: url('../../assets/images/bg-sidebar-mobile.svg') top/cover no-repeat var(--color-blue-100);
-}
-
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-family: inherit;
 }
 
 .d-none {
@@ -53,39 +47,6 @@ button {
 
   &.desktop {
     display: none;
-  }
-}
-
-.btn-next, .btn-confirm {
-  font: var(--text-4-medium);
-  background-color: var(--color-blue-950);
-  color: var(--color-white);
-  border-radius: 0.25rem;
-  padding: 0.6rem 1rem;
-}
-
-.btn-next {
-  background-color: var(--color-blue-950);
-
-  &:hover {
-    background-color: var(--color-blue-700);
-  }
-}
-
-.btn-confirm {
-  background-color: var(--color-purple-600);
-
-  &:hover {
-    background-color: var(--color-purple-400);
-  }
-}
-
-.btn-back {
-  font: var(--text-3-medium);
-  color: var(--color-gray-500);
-
-  &:hover {
-    color: var(--color-blue-950);
   }
 }
 
@@ -162,11 +123,5 @@ button {
   .payment-form-controls.desktop {
     display: flex;
     padding: 0;
-  }
-
-  .btn-next, .btn-confirm {
-    font: var(--text-3-medium);
-    border-radius: 0.5rem;
-    padding: 1rem 1.5rem;
   }
 }
