@@ -1,3 +1,5 @@
+@use 'mixins';
+
 button {
   cursor: pointer;
 }
@@ -8,6 +10,12 @@ button {
   font: var(--text-4-medium);
   border-radius: 0.25rem;
   padding: 0.6rem 1rem;
+
+  @include mixins.tablet {
+    font: var(--text-3-medium);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+  }
 }
 
 .btn-next, .btn-confirm {
@@ -39,16 +47,8 @@ button {
   &:hover {
     color: var(--color-blue-950);
   }
-}
 
-@media (min-width: 768px) {
-  .btn {
-    font: var(--text-3-medium);
-    border-radius: 0.5rem;
-    padding: 1rem 1.5rem;
-  }
-
-  .btn-back {
+  @include mixins.tablet {
     border-radius: 0;
     padding: 0;
   }
