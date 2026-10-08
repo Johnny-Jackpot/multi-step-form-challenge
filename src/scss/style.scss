@@ -35,12 +35,9 @@
   --text-4-medium: 500 0.875rem/1.5 var(--font-family-base);
   --text-4-regular: 400 0.875rem/1.2 var(--font-family-base);
   --text-5: 400 0.75rem/1.2 var(--font-family-base);
-
-  font-size: 16px;
 }
 
 body {
-  font-size: 16px;
   font-weight: 400;
   background: url('../../assets/images/bg-sidebar-mobile.svg') top/cover no-repeat var(--color-blue-100);
 }
