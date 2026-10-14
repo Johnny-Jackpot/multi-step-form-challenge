@@ -9,13 +9,6 @@
   <title>Multi-step form</title>
 </head>
 <body>
-  <div class="mobile-header">
-    <span class="step active">1</span>
-    <span class="step">2</span>
-    <span class="step">3</span>
-    <span class="step">4</span>
-  </div>
-
   <div style="display: none;">
     <!-- Sidebar start -->
 
@@ -120,11 +113,40 @@
     <!-- Step 5 end -->
   </div>
 
-  <main class="container">
+  <main class="app-wrapper">
     <div class="form-layout card">
-      <div class="desktop-steps">
-        steps goes here
-      </div>
+      <nav class="steps" aria-label="Progress">
+        <ol class="steps-list">
+          <li class="steps-item" aria-current="step">
+            <span class="step active">1</span>
+            <span class="steps-label">
+              <span class="steps-label-number">Step 1</span>
+              <span class="steps-label-title">Your info</span>
+            </span>
+          </li>
+          <li class="steps-item">
+            <span class="step">2</span>
+            <span class="steps-label">
+              <span class="steps-label-number">Step 2</span>
+              <span class="steps-label-title">Select plan</span>
+            </span>
+          </li>
+          <li class="steps-item">
+            <span class="step">3</span>
+            <span class="steps-label">
+              <span class="steps-label-number">Step 3</span>
+              <span class="steps-label-title">Add-ons</span>
+            </span>
+          </li>
+          <li class="steps-item">
+            <span class="step">4</span>
+            <span class="steps-label">
+              <span class="steps-label-number">Step 4</span>
+              <span class="steps-label-title">Summary</span>
+            </span>
+          </li>
+        </ol>
+      </nav>
       <form class="payment-form">
         <div class="payment-form-fields">
           inputs goes here
