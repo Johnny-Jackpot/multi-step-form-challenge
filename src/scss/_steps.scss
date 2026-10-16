@@ -1,6 +1,6 @@
 @use 'mixins';
 
-.steps {
+.nav-steps {
   position: fixed;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@
   }
 }
 
-.steps-list {
+.nav-steps-list {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -35,13 +35,13 @@
   }
 }
 
-.steps-item {
+.nav-steps-item {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.step {
+.nav-steps-circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,7 @@
   }
 }
 
-.steps-label {
+.nav-steps-label {
   display: none;
 
   @include mixins.tablet {
@@ -71,12 +71,12 @@
   }
 }
 
-.steps-label-number {
+.nav-steps-label-number {
   font: var(--text-5);
   color: var(--color-blue-300);
 }
 
-.steps-label-title {
+.nav-steps-label-title {
   font: var(--text-4-bold);
   letter-spacing: 1px;
   color: var(--color-white);
