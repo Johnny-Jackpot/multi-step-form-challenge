@@ -73,3 +73,66 @@
     border-color: var(--color-red-500);
   }
 }
+
+// A checkbox styled as an on/off switch. Unchecked = "off" side, checked = "on" side.
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.switch-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switch-label {
+  font: var(--text-4-medium);
+  color: var(--color-gray-500);
+}
+
+.switch-label-off,
+.switch:has(.switch-input:checked) .switch-label-on {
+  color: var(--color-blue-950);
+}
+
+.switch:has(.switch-input:checked) .switch-label-off {
+  color: var(--color-gray-500);
+}
+
+.switch-track {
+  position: relative;
+  width: 2.375rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  background-color: var(--color-blue-950);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    transition: transform 0.2s ease;
+  }
+}
+
+.switch-input:checked + .switch-track::before {
+  transform: translateX(1.125rem);
+}
+
+.switch-input:focus-visible + .switch-track {
+  outline: 2px solid var(--color-purple-600);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .switch-track::before {
+    transition: none;
+  }
+}

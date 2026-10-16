@@ -74,3 +74,17 @@
   font: var(--text-4-regular);
   color: var(--color-gray-500);
 }
+
+.billing-period {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--color-blue-50);
+
+  @include mixins.tablet {
+    margin-top: 2rem;
+  }
+}
