@@ -1,0 +1,15 @@
+@use 'mixins';
+
+.d-none {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start-md {
+  @include mixins.tablet {
+    text-align: start;
+  }
+}

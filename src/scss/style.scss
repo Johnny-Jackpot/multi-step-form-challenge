@@ -4,14 +4,11 @@
 @use 'buttons';
 @use 'steps';
 @use 'form-fields';
+@use 'utilities';
 @use 'mixins';
 
 body {
   background-color: var(--color-blue-100);
-}
-
-.d-none {
-  display: none;
 }
 
 .card {
@@ -55,7 +52,7 @@ body {
 
   @include mixins.tablet {
     margin-inline: clamp(3.625rem, 7vw, 6.25rem);
-    margin-block: clamp(2rem, 3vw, 3rem);
+    margin-top: 3rem;
   }
 }
 
