@@ -10,17 +10,6 @@
 </head>
 <body>
   <div style="display: none;">
-    <!-- Step 4 start -->
-
-    <!-- Dynamically add subscription and add-on selections here -->
-
-    Total (per month/year)
-
-    Go Back
-    Confirm
-
-    <!-- Step 4 end -->
-
     <!-- Step 5 start -->
 
     Thank you!
@@ -153,7 +142,7 @@
           </div>
         </div>
 
-        <div class="form-step active">
+        <div class="form-step">
           <header class="form-heading">
             <h2 class="form-title" id="addons-title">Pick add-ons</h2>
             <p class="form-description">Add-ons help enhance your gaming experience.</p>
@@ -189,17 +178,43 @@
           </fieldset>
         </div>
 
-        <div class="form-step">
+        <div class="form-step active">
           <header class="form-heading">
             <h2 class="form-title">Finishing up</h2>
             <p class="form-description">Double-check everything looks OK before confirming.</p>
           </header>
+
+          <div class="summary">
+            <div class="summary-plan">
+              <div class="summary-plan-info">
+                <p class="summary-plan-name">Arcade (Monthly)</p>
+                <button type="button" class="btn btn-secondary summary-change">Change</button>
+              </div>
+              <p class="summary-plan-price">$9/mo</p>
+            </div>
+
+            <ul class="summary-addons">
+              <li class="summary-addon">
+                <span class="summary-addon-name">Online service</span>
+                <span class="summary-addon-price">+$1/mo</span>
+              </li>
+              <li class="summary-addon">
+                <span class="summary-addon-name">Larger storage</span>
+                <span class="summary-addon-price">+$2/mo</span>
+              </li>
+            </ul>
+          </div>
+
+          <p class="summary-total">
+            <span class="summary-total-label">Total (per month)</span>
+            <span class="summary-total-price">+$12/mo</span>
+          </p>
         </div>
 
         <div class="payment-form-controls">
-          <button type="button" class="btn btn-back">Go Back</button>
-          <button type="button" class="btn btn-next">Next Step</button>
-          <button type="submit" class="btn btn-confirm d-none">Confirm</button>
+          <button type="button" class="btn btn-secondary">Go Back</button>
+          <button type="button" class="btn btn-primary">Next Step</button>
+          <button type="submit" class="btn btn-success d-none">Confirm</button>
         </div>
       </form>
     </div>

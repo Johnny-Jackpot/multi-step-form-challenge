@@ -18,11 +18,11 @@ button {
   }
 }
 
-.btn-next, .btn-confirm {
+.btn-primary, .btn-success {
   color: var(--color-white);
 }
 
-.btn-next {
+.btn-primary {
   background-color: var(--color-blue-950);
 
   &:hover {
@@ -30,7 +30,7 @@ button {
   }
 }
 
-.btn-confirm {
+.btn-success {
   background-color: var(--color-purple-600);
 
   &:hover {
@@ -38,7 +38,7 @@ button {
   }
 }
 
-.btn-back {
+.btn-secondary {
   font: var(--text-3-medium);
   color: var(--color-gray-500);
   border-radius: 0;
