@@ -1,0 +1,39 @@
+@use '../mixins';
+
+// Centre the message in the space the other steps use for their content.
+.form-step-thanks.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 3rem;
+  text-align: center;
+
+  @include mixins.tablet {
+    gap: 0.75rem;
+    padding-block: 0;
+  }
+}
+
+.thanks-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+
+  @include mixins.tablet {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+// Nothing left to do after confirming, so the Back/Next bar goes away.
+.payment-form:has(.form-step-thanks.active) .payment-form-controls {
+  display: none;
+}
