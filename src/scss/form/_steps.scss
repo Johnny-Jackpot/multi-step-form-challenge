@@ -1,4 +1,4 @@
-@use 'mixins';
+@use '../mixins';
 
 .nav-steps {
   position: fixed;
@@ -9,14 +9,14 @@
   z-index: -1;
   height: 10.75rem;
   padding-top: 2rem;
-  background: url('../../assets/images/bg-sidebar-mobile.svg') center/cover no-repeat;
+  background: url('../../../assets/images/bg-sidebar-mobile.svg') center/cover no-repeat;
 
   @include mixins.tablet {
     position: static;
     z-index: auto;
     height: auto;
     padding: 2.5rem 2rem;
-    background: url('../../assets/images/bg-sidebar-desktop.svg') center/cover no-repeat;
+    background: url('../../../assets/images/bg-sidebar-desktop.svg') center/cover no-repeat;
     border-radius: 10px;
     margin: 1rem 0 1rem 1rem;
   }

@@ -1,4 +1,4 @@
-@use 'mixins';
+@use '../mixins';
 
 .form-fields {
   display: flex;
@@ -150,7 +150,7 @@
 
   &:checked {
     border-color: var(--color-purple-600);
-    background: url('../../assets/images/icon-checkmark.svg') center no-repeat var(--color-purple-600);
+    background: url('../../../assets/images/icon-checkmark.svg') center no-repeat var(--color-purple-600);
   }
 
   &:focus-visible {
