@@ -1,0 +1,74 @@
+@use 'mixins';
+
+.addon-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: none;
+  min-width: 0;
+
+  @include mixins.tablet {
+    gap: 1rem;
+  }
+}
+
+.addon-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-purple-200);
+  border-radius: 8px;
+  background-color: var(--color-white);
+  cursor: pointer;
+
+  @include mixins.tablet {
+    gap: 1.5rem;
+    padding: 1.125rem 1.5rem;
+  }
+
+  &:hover {
+    border-color: var(--color-purple-600);
+  }
+
+  &:has(.form-checkbox:checked) {
+    border-color: var(--color-purple-600);
+    background-color: var(--color-blue-50);
+  }
+}
+
+.addon-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+  margin-right: auto;
+}
+
+.addon-name {
+  font: var(--text-4-medium);
+  color: var(--color-blue-950);
+
+  @include mixins.tablet {
+    font: var(--text-3-medium);
+  }
+}
+
+.addon-description {
+  font: var(--text-5);
+  color: var(--color-gray-500);
+
+  @include mixins.tablet {
+    font: var(--text-4-regular);
+  }
+}
+
+.addon-price {
+  flex-shrink: 0;
+  font: var(--text-5);
+  color: var(--color-purple-600);
+
+  @include mixins.tablet {
+    font: var(--text-4-regular);
+  }
+}

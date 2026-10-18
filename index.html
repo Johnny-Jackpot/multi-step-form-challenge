@@ -10,44 +10,6 @@
 </head>
 <body>
   <div style="display: none;">
-    <!-- Step 2 start -->
-
-    Arcade
-    $9/mo
-
-    Advanced
-    $12/mo
-
-    Pro
-    $15/mo
-
-    Monthly
-    Yearly
-
-    Go Back
-    Next Step
-
-    <!-- Step 2 end -->
-
-    <!-- Step 3 start -->
-
-    Online service
-    Access to multiplayer games
-    +$1/mo
-
-    Larger storage
-    Extra 1TB of cloud save
-    +$2/mo
-
-    Customizable Profile
-    Custom theme on your profile
-    +$2/mo
-
-    Go Back
-    Next Step
-
-    <!-- Step 3 end -->
-
     <!-- Step 4 start -->
 
     <!-- Dynamically add subscription and add-on selections here -->
@@ -144,7 +106,7 @@
           </div>
         </div>
 
-        <div class="form-step active">
+        <div class="form-step">
           <header class="form-heading">
             <h2 class="form-title" id="plan-title">Select your plan</h2>
             <p class="form-description">You have the option of monthly or yearly billing.</p>
@@ -181,21 +143,50 @@
           </fieldset>
 
           <div class="billing-period">
-            <label class="switch">
-              <span class="switch-label switch-label-off" aria-hidden="true">Monthly</span>
-              <input class="switch-input" type="checkbox" name="billing" value="yearly"
+            <label class="form-switch">
+              <span class="form-switch-label form-switch-label-off" aria-hidden="true">Monthly</span>
+              <input class="form-switch-input" type="checkbox" name="billing" value="yearly"
                      role="switch" aria-label="Yearly billing">
-              <span class="switch-track" aria-hidden="true"></span>
-              <span class="switch-label switch-label-on" aria-hidden="true">Yearly</span>
+              <span class="form-switch-track" aria-hidden="true"></span>
+              <span class="form-switch-label form-switch-label-on" aria-hidden="true">Yearly</span>
             </label>
           </div>
         </div>
 
-        <div class="form-step">
+        <div class="form-step active">
           <header class="form-heading">
-            <h2 class="form-title">Pick add-ons</h2>
+            <h2 class="form-title" id="addons-title">Pick add-ons</h2>
             <p class="form-description">Add-ons help enhance your gaming experience.</p>
           </header>
+
+          <fieldset class="addon-options" aria-labelledby="addons-title">
+            <label class="addon-option">
+              <input class="form-checkbox" type="checkbox" name="addons" value="online-service">
+              <span class="addon-text">
+                <span class="addon-name">Online service</span>
+                <span class="addon-description">Access to multiplayer games</span>
+              </span>
+              <span class="addon-price">+$1/mo</span>
+            </label>
+
+            <label class="addon-option">
+              <input class="form-checkbox" type="checkbox" name="addons" value="larger-storage">
+              <span class="addon-text">
+                <span class="addon-name">Larger storage</span>
+                <span class="addon-description">Extra 1TB of cloud save</span>
+              </span>
+              <span class="addon-price">+$2/mo</span>
+            </label>
+
+            <label class="addon-option">
+              <input class="form-checkbox" type="checkbox" name="addons" value="customizable-profile">
+              <span class="addon-text">
+                <span class="addon-name">Customizable profile</span>
+                <span class="addon-description">Custom theme on your profile</span>
+              </span>
+              <span class="addon-price">+$2/mo</span>
+            </label>
+          </fieldset>
         </div>
 
         <div class="form-step">

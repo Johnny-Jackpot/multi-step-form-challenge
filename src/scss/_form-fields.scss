@@ -75,34 +75,34 @@
 }
 
 // A checkbox styled as an on/off switch. Unchecked = "off" side, checked = "on" side.
-.switch {
+.form-switch {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   cursor: pointer;
 }
 
-.switch-input {
+.form-switch-input {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-.switch-label {
+.form-switch-label {
   font: var(--text-4-medium);
   color: var(--color-gray-500);
 }
 
-.switch-label-off,
-.switch:has(.switch-input:checked) .switch-label-on {
+.form-switch-label-off,
+.form-switch:has(.form-switch-input:checked) .form-switch-label-on {
   color: var(--color-blue-950);
 }
 
-.switch:has(.switch-input:checked) .switch-label-off {
+.form-switch:has(.form-switch-input:checked) .form-switch-label-off {
   color: var(--color-gray-500);
 }
 
-.switch-track {
+.form-switch-track {
   position: relative;
   width: 2.375rem;
   height: 1.25rem;
@@ -122,17 +122,39 @@
   }
 }
 
-.switch-input:checked + .switch-track::before {
+.form-switch-input:checked + .form-switch-track::before {
   transform: translateX(1.125rem);
 }
 
-.switch-input:focus-visible + .switch-track {
+.form-switch-input:focus-visible + .form-switch-track {
   outline: 2px solid var(--color-purple-600);
   outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .switch-track::before {
+  .form-switch-track::before {
     transition: none;
+  }
+}
+
+// The real checkbox, restyled: appearance: none drops the browser's own box but keeps all behaviour.
+.form-checkbox {
+  appearance: none;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid var(--color-purple-200);
+  border-radius: 4px;
+  background-color: var(--color-white);
+  cursor: pointer;
+
+  &:checked {
+    border-color: var(--color-purple-600);
+    background: url('../../assets/images/icon-checkmark.svg') center no-repeat var(--color-purple-600);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-purple-600);
+    outline-offset: 2px;
   }
 }
